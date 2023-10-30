@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="website icon" type="png" href="./assets/img/Untold Coding.png" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>login form - untoldcoding</title>
+  </head>
+  <body>
+    <div class="login">
+      <video id="video1" autoplay muted loop>
+        <source src=".//assets/video/video.mp4" type="video/mp4" />
+      </video>
+      <audio controls autoplay loop>
+        <source src=".//assets/mp3/video.mp3" type="audio/mpeg" />
+      </audio>
+      <form action="" class="form">
+        <h1 class="head">Login</h1>
+
+        <div class="content">
+          <div class="box">
+            <i class="ri-user-3-line login__icon"></i>
+
+            <div class="box-input">
+              <input
+                type="email"
+                required
+                class="input"
+                id="login-email"
+                placeholder=" "
+              />
+              <label for="login-email" class="login__label">Email</label>
+            </div>
+          </div>
+
+          <div class="box">
+            <i class="ri-lock-2-line login__icon"></i>
+
+            <div class="box-input">
+              <input
+                type="password"
+                required
+                class="input"
+                id="login-pass"
+                placeholder=" "
+              />
+              <label for="login-pass" class="login__label">Password</label>
+              <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="tick">
+          <div class="tick-group">
+            <input type="checkbox" class="tick-input" id="login-check" />
+            <label for="login-check" class="tick-label">Remember me</label>
+          </div>
+
+          <a href="#" class="forgot">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="button">Login</button>
+
+        <p class="register">Don't have an account? <a href="#">Register</a></p>
+      </form>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
